@@ -28,3 +28,10 @@ Upcoming
 - MITRE ATT&CK Mapping
 - Detection Rules
 - Incident Response
+
+## Project Documentation
+
+- [Environment Setup](01-Environment-Setup/setup.md)
+- [Active Directory Installation](02-Active-Directory/active-directory.md)
+- [Domain Join](03-Domain-Join/domain-join.md)
+- [Group Policy](04-Group-Policy/group-policy.md)
