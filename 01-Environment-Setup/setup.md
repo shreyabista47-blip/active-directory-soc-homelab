@@ -2,23 +2,71 @@
 
 ## Objective
 
-Build an enterprise-style Active Directory home lab for learning Windows administration, Active Directory, Group Policy, and Security Operations (SOC) concepts.
+The goal of this project is to build an enterprise-style cybersecurity home lab that simulates a real-world Windows domain environment.
 
-## Lab Environment
+The lab is designed to practice:
 
-### Host Machine
+- Windows Server administration
+- Active Directory management
+- Group Policy configuration
+- Endpoint management
+- Security monitoring
+- Threat detection
 
-- Windows 11
-- VirtualBox
+---
 
-### Virtual Machines
+## Lab Architecture
 
-- Windows Server 2025 (Domain Controller)
-- Windows 11 Pro (Client)
+The environment consists of:
 
-## Network
+| System | Purpose |
+|---|---|
+| DC01 | Windows Server Domain Controller |
+| Client01 | Windows 11 domain-joined workstation |
 
-- Host-Only Adapter
-- NAT Adapter
+---
 
-This environment will later be expanded with Sysmon, Splunk Enterprise, and attack simulations.
+## Virtualization Platform
+
+The lab was created using:
+
+- Oracle VirtualBox
+
+Virtual machines:
+
+- Windows Server 2025 (Server Core)
+- Windows 11 Pro
+
+---
+
+## Virtual Machine Overview
+
+The lab environment contains a dedicated Domain Controller and Windows client machine.
+
+![VirtualBox Overview](../images/virtualbox-overview.png)
+
+---
+
+## Current Progress
+
+Completed:
+
+- ✅ VirtualBox environment setup
+- ✅ Windows Server installation
+- ✅ Windows 11 client installation
+- ✅ Active Directory deployment
+- ✅ Domain configuration
+- ✅ DNS configuration
+- ✅ User management
+- ✅ Organizational Units
+- ✅ Domain joining
+- ✅ Group Policy configuration
+
+Upcoming:
+
+- ⏳ Sysmon deployment
+- ⏳ Splunk Enterprise integration
+- ⏳ Windows event monitoring
+- ⏳ Attack simulation
+- ⏳ Detection engineering
+- ⏳ MITRE ATT&CK mapping
