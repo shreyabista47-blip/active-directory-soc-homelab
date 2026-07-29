@@ -2,25 +2,26 @@
 
 🚧 **Status: Work in Progress**
 
-A hands-on cybersecurity home lab designed to simulate an enterprise Windows environment and build practical SOC analyst skills through Active Directory administration, endpoint management, security monitoring, and threat detection.
+A hands-on cybersecurity home lab designed to simulate an enterprise Windows environment and develop practical SOC analyst skills through Active Directory administration, endpoint management, security monitoring, and threat detection.
 
 ---
 
-## Project Overview
+# Project Overview
 
-This project focuses on building an enterprise-style lab environment from the ground up.
+This project documents the development of an enterprise-style cybersecurity lab environment built from the ground up.
 
-The current phase covers:
+The goal is to gain practical experience with:
 
-- Windows Server deployment
-- Active Directory Domain Services (AD DS)
-- DNS configuration
-- User and access management
-- Organizational Units (OUs)
+- Windows Server administration
+- Active Directory management
+- Identity and Access Management (IAM)
 - Group Policy security controls
-- Windows endpoint domain integration
+- Endpoint configuration
+- Security monitoring
+- Threat detection
+- Incident response workflows
 
-Future phases will expand this environment into a complete SOC simulation with SIEM monitoring, attack simulations, and detection engineering.
+The current phase focuses on building the Windows enterprise foundation. Future phases will expand this environment into a complete SOC simulation using SIEM tools, attack simulations, and detection engineering.
 
 ---
 
@@ -30,41 +31,44 @@ Future phases will expand this environment into a complete SOC simulation with S
                     cyberlab.local
                           |
                           |
-              Windows Server 2025 (DC01)
-                    Domain Controller
+          Windows Server 2025 (DC01)
+              Domain Controller
+          AD DS + DNS + PowerShell
                           |
-              -------------------------
                           |
-              Windows 11 Pro (Client01)
-                  Domain Joined Endpoint
+              ---------------------
+                          |
+                          |
+             Windows 11 Pro (Client01)
+              Domain Joined Endpoint
 ```
 
 ---
 
 # Technologies Used
 
-### Infrastructure
+## Infrastructure
 
 - Windows Server 2025 (Server Core)
 - Windows 11 Pro
 - Oracle VirtualBox
 
-### Active Directory
+## Active Directory
 
 - Active Directory Domain Services (AD DS)
 - DNS
 - PowerShell Administration
 - User Management
-- Organizational Units
+- Organizational Units (OUs)
 - Group Policy Objects (GPO)
 
-### Security Operations (Upcoming)
+## Security Operations (Upcoming)
 
 - Splunk Enterprise
 - Sysmon
-- Windows Event Monitoring
+- Windows Security Event Monitoring
 - SIEM Analysis
-- MITRE ATT&CK Mapping
+- MITRE ATT&CK Framework
 - Attack Simulation
 - Detection Engineering
 
@@ -74,7 +78,9 @@ Future phases will expand this environment into a complete SOC simulation with S
 
 ## ✅ Active Directory Deployment
 
-Built and configured a Windows domain environment:
+Built and configured a Windows enterprise domain environment.
+
+Completed:
 
 - Installed Active Directory Domain Services
 - Promoted Windows Server to Domain Controller
@@ -82,29 +88,56 @@ Built and configured a Windows domain environment:
 - Configured DNS services
 - Verified Domain Controller functionality
 
+### Domain Controller Verification
+
 ![Domain Controller](images/dc01-domain-controller.png)
+
+---
+
+## ✅ Windows Server Configuration
+
+Configured and verified the Windows Server environment using PowerShell.
+
+Completed:
+
+- Server configuration
+- Network configuration
+- Installed server roles verification
+- Active Directory validation
+
+### Server Information
+
+![Server Information](images/dc01-server-info.png)
+
+### Installed Roles
+
+![Installed Roles](images/dc01-installed-roles.png)
 
 ---
 
 ## ✅ Active Directory User Management
 
-Created and managed domain users and organizational structure using Active Directory.
+Created and managed domain users and organizational structure.
 
 Implemented:
 
-- User accounts
+- Domain user accounts
 - Organizational Units
-- Domain administration
+- User organization and management
+
+### Domain Users
 
 ![Domain Users](images/dc01-domain-users.png)
+
+### Organizational Units
 
 ![Organizational Units](images/dc01-organizational-units.png)
 
 ---
 
-## ✅ Windows Endpoint Integration
+## ✅ Windows 11 Domain Integration
 
-Joined a Windows 11 workstation to the Active Directory domain.
+Configured a Windows 11 Pro endpoint and successfully joined it to the Active Directory domain.
 
 Verified:
 
@@ -112,13 +145,15 @@ Verified:
 - Domain authentication
 - Communication with Domain Controller
 
+### Domain Membership
+
 ![Domain Membership](images/client01-domain-membership.png)
 
 ---
 
 ## ✅ Domain Authentication Verification
 
-Validated successful authentication using domain credentials.
+Validated authentication using an Active Directory domain account.
 
 Example:
 
@@ -126,11 +161,13 @@ Example:
 CYBERLAB\shreya.bista
 ```
 
-Verification:
+Verification command:
 
 ```cmd
 whoami
 ```
+
+### Authentication Verification
 
 ![Domain Authentication](images/client01-domain-user-authentication.png)
 
@@ -140,23 +177,65 @@ whoami
 
 Verified endpoint connectivity and Active Directory DNS configuration.
 
+Command used:
+
 ```cmd
 ipconfig /all
 ```
+
+### Client Network Configuration
 
 ![Network Configuration](images/client01-network-config.png)
 
 ---
 
+# Project Documentation
+
+Detailed documentation for each phase of the lab:
+
+## Environment Setup
+
+Virtual machine deployment and initial lab configuration.
+
+➡️ [View Environment Setup](01-Environment-Setup/setup.md)
+
+---
+
+## Active Directory Configuration
+
+Domain Controller deployment, DNS configuration, user management, and Organizational Units.
+
+➡️ [View Active Directory Documentation](02-Active-Directory/active-directory.md)
+
+---
+
+## Domain Join
+
+Windows 11 endpoint integration and Active Directory authentication verification.
+
+➡️ [View Domain Join Documentation](03-Domain-Join/domain-join.md)
+
+---
+
+## Group Policy Configuration
+
+Security policies and centralized endpoint management.
+
+➡️ [View Group Policy Documentation](04-Group-Policy/group-policy.md)
+
+---
+
 # Security Skills Demonstrated
 
-This project demonstrates practical experience with:
+This project demonstrates hands-on experience with:
 
 ✅ Windows Server Administration  
-✅ Active Directory Management  
+✅ Active Directory Deployment  
 ✅ Identity and Access Management  
-✅ PowerShell Administration  
 ✅ Domain Authentication  
+✅ PowerShell Administration  
+✅ DNS Configuration  
+✅ User and Access Management  
 ✅ Group Policy Configuration  
 ✅ Endpoint Management  
 ✅ Cybersecurity Lab Development  
@@ -165,27 +244,28 @@ This project demonstrates practical experience with:
 
 # Future Development Roadmap
 
-## SOC Monitoring Environment
+## Phase 2: SOC Monitoring Environment ⏳
 
 Planned additions:
 
-- [ ] Configure advanced Windows auditing
+- [ ] Enable advanced Windows auditing
 - [ ] Deploy Sysmon
-- [ ] Forward Windows security logs
-- [ ] Integrate Splunk SIEM
+- [ ] Configure Windows event collection
+- [ ] Integrate Splunk Enterprise
+- [ ] Monitor authentication events
+- [ ] Detect brute-force attacks
 - [ ] Create detection rules
-- [ ] Simulate attacks
-- [ ] Investigate security incidents
-- [ ] Map detections to MITRE ATT&CK techniques
+- [ ] Perform security investigations
+- [ ] Map activity to MITRE ATT&CK techniques
 
 ---
 
-# Related Projects
+# Related Cybersecurity Projects
 
-Other cybersecurity projects:
+Other hands-on security projects:
 
 - Microsoft Sentinel Failed Login Detection Lab
-- Splunk Windows Authentication Monitoring Lab
+- Splunk Windows Authentication Monitoring & Brute Force Detection Lab
 - Python Security Log Analyzer
 - Wireshark Malware Traffic Analysis
 
