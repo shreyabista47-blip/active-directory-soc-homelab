@@ -61,7 +61,7 @@ gpresult /r
 A screenshot showing the applied Group Policy Objects will be added after final verification.
 
 <!-- Add image here later:
-![Applied Group Policy](https://github.com/shreyabista47-blip/active-directory-soc-homelab/blob/main/images/client01-group-policies.png)
+![Applied Group Policy](../images/client01-group-policies.png)
 -->
 
 ---
