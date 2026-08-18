@@ -58,7 +58,7 @@ The applied policies can be verified using:
 gpresult /r
 ```
 
-A screenshot showing the applied Group Policy Objects will be added after final verification.
+A screenshot showing the applied Group Policy:
 
 
 ![Applied Group Policy](../images/client01-group-policies.png)
@@ -75,4 +75,4 @@ Completed:
 - ✅ Configured security policies
 - ✅ Applied policies to domain clients
 - ✅ Tested policy updates using gpupdate
-- ⏳ Final gpresult evidence pending
+- ✅ Final gpresult evidence
