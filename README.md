@@ -429,29 +429,6 @@ This project demonstrates hands-on experience with:
 
 ---
 
-# Development Roadmap
-
-## Phase 2: SOC Monitoring Environment ✅ Functionally Complete
-
-- [x] Enable advanced Windows auditing
-- [x] Configure Windows event collection
-- [x] Integrate Splunk Enterprise
-- [x] Monitor authentication events
-- [x] Detect brute-force attacks
-- [x] Create detection rules
-- [x] Build SOC monitoring dashboard
-- [x] Map activity to MITRE ATT&CK techniques
-- [ ] Add final dashboard screenshot to documentation
-- [ ] Deploy Sysmon for deeper process/network visibility (future phase)
-
-## Phase 3: Expanded Detection Scenarios ⏳ Planned
-
-- [ ] Simulate privilege escalation (add user to privileged group)
-- [ ] Simulate suspicious PowerShell activity
-- [ ] Multi-host correlation
-
----
-
 # Related Cybersecurity Projects
 
 Other hands-on security projects:
