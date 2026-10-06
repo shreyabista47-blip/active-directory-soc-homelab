@@ -1,7 +1,5 @@
 # Active Directory SOC Home Lab
 
-🚧 **Status: Work in Progress**
-
 A hands-on cybersecurity home lab designed to simulate an enterprise Windows environment and develop practical SOC analyst skills through Active Directory administration, endpoint management, security monitoring, and threat detection.
 
 ---
