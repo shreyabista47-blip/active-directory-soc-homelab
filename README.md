@@ -21,7 +21,7 @@ The goal is to gain practical experience with:
 
 **The idea:** build a small but complete enterprise environment, then attack it on purpose, and use that attack to prove out a real detection pipeline, the same loop a SOC analyst lives in every day: an event happens, it gets logged, it gets collected, it gets investigated, and it gets turned into something that would catch the next one automatically.
 
-**Phase 1** built the Windows enterprise foundation, Active Directory, a domain-joined endpoint, and centralized management via Group Policy. **Phase 2** turned that foundation into a working SOC detection environment: advanced audit logging, a simulated attacker, centralized log collection with Splunk, and detection engineering with alerting and a dashboard. Both phases are functionally complete, only one dashboard screenshot is still pending (noted below).
+**Phase 1** built the Windows enterprise foundation, Active Directory, a domain-joined endpoint, and centralized management via Group Policy. **Phase 2** turned that foundation into a working SOC detection environment: advanced audit logging, a simulated attacker, centralized log collection with Splunk, and detection engineering with alerting and a dashboard.
 
 ---
 
@@ -80,7 +80,6 @@ flowchart TD
 
 ---
 
-# Completed Work
 
 ## ✅ Active Directory Deployment
 
