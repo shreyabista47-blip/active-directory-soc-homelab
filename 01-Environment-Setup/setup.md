@@ -47,26 +47,3 @@ The lab environment contains a dedicated Domain Controller and Windows client ma
 
 ---
 
-## Current Progress
-
-Completed:
-
-- ✅ VirtualBox environment setup
-- ✅ Windows Server installation
-- ✅ Windows 11 client installation
-- ✅ Active Directory deployment
-- ✅ Domain configuration
-- ✅ DNS configuration
-- ✅ User management
-- ✅ Organizational Units
-- ✅ Domain joining
-- ✅ Group Policy configuration
-
-Upcoming:
-
-- ⏳ Sysmon deployment
-- ⏳ Splunk Enterprise integration
-- ⏳ Windows event monitoring
-- ⏳ Attack simulation
-- ⏳ Detection engineering
-- ⏳ MITRE ATT&CK mapping
